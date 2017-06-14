@@ -67,13 +67,13 @@ switcher - j            :    kwmc window -f south
 switcher - k            :    kwmc window -f north 
 
 
-ctrl + alt - h            :    kwmc window -f west
-ctrl + alt - l            :    kwmc window -f east
-ctrl + alt - j            :    kwmc window -f south
-ctrl + alt - k            :    kwmc window -f north
+# ctrl + alt - h            :    kwmc window -f west
+# ctrl + alt - l            :    kwmc window -f east
+# ctrl + alt - j            :    kwmc window -f south
+# ctrl + alt - k            :    kwmc window -f north
 
-cmd + alt - n            :    kwmc window -fm prev
-cmd + alt - m            :    kwmc window -fm next
+# cmd + alt - n            :    kwmc window -fm prev
+# cmd + alt - m            :    kwmc window -fm next
 
 # Give Focus To Screen
 cmd + alt - 1            :    kwmc display -f 0
@@ -81,11 +81,11 @@ cmd + alt - 2            :    kwmc display -f 1
 cmd + alt - 3            :    kwmc display -f 2
 
 # Swap Focused Window
-#ctrl + alt - h           :    kwmc window -s west
-#ctrl + alt - j           :    kwmc window -s south
-#ctrl + alt - k           :    kwmc window -s north
-#ctrl + alt - l           :    kwmc window -s east
-#ctrl + alt - m           :    kwmc window -s mark
+ctrl + alt - h           :    kwmc window -s west
+ctrl + alt - j           :    kwmc window -s south
+ctrl + alt - k           :    kwmc window -s north
+ctrl + alt - l           :    kwmc window -s east
+ctrl + alt - m           :    kwmc window -s mark
 
 # Pseudo containers
 cmd + ctrl + alt - p     :    kwmc tree -pseudo create
