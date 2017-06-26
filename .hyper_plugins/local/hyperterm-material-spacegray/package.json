@@ -1,0 +1,53 @@
+{
+  "_from": "hyperterm-material-spacegray",
+  "_id": "hyperterm-material-spacegray@0.1.1",
+  "_inBundle": false,
+  "_integrity": "sha1-eu9P90x7qXqZynfxduGC7P9R9LI=",
+  "_location": "/hyperterm-material-spacegray",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "hyperterm-material-spacegray",
+    "name": "hyperterm-material-spacegray",
+    "escapedName": "hyperterm-material-spacegray",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/hyperterm-material-spacegray/-/hyperterm-material-spacegray-0.1.1.tgz",
+  "_shasum": "7aef4ff74c7ba97a99ca77f176e182ecff51f4b2",
+  "_spec": "hyperterm-material-spacegray",
+  "_where": "/Users/Orlandini/.hyper_plugins/local",
+  "bugs": {
+    "url": "https://github.com/saadq/hyperterm-material-spacegray/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A port of Material Spacegray for hyper.",
+  "devDependencies": {
+    "snazzy": "^5.0.0",
+    "standard": "^8.4.0"
+  },
+  "homepage": "https://github.com/saadq/hyperterm-material-spacegray#readme",
+  "keywords": [
+    "hyperterm",
+    "hyper",
+    "theme"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "hyperterm-material-spacegray",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saadq/hyperterm-material-spacegray.git"
+  },
+  "scripts": {
+    "test": "standard | snazzy"
+  },
+  "version": "0.1.1"
+}

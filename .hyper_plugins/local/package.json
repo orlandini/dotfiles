@@ -1,0 +1,6 @@
+{
+  "name": "hpm-placeholder",
+  "dependencies": {
+    "hyperterm-material-spacegray": "^0.1.1"
+  }
+}
