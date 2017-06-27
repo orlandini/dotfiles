@@ -24,7 +24,6 @@ swap + ctrl - f         :   khd -e "mode activate default"
 space + ctrl - f        :   khd -e "mode activate default"
 tree + ctrl - f         :   khd -e "mode activate default"
 
-switcher - w            :   khd -e "mode activate ytd"
 switcher - s            :   khd -e "mode activate swap"
 switcher - a            :   khd -e "mode activate space"
 switcher - t            :   khd -e "mode activate tree"
@@ -66,27 +65,6 @@ switcher + shift - 1    :   kwmc display -f 0
 switcher + shift - 2    :   kwmc display -f 1
 switcher + shift - 3    :   kwmc display -f 2
 
-
-
-# ytd mode
-ytd - x                 :   ytc play;\
-                            khd -e "mode activate default"
-
-ytd - s                 :   ytc mkfav;\
-                            khd -e "mode activate default"
-
-# 0x32 == <
-ytd - 0x32              :   ytc fav
-ytd - z                 :   ytc prev
-ytd - c                 :   ytc next
-ytd - v                 :   ytc stop
-ytd - a                 :   ytc volup
-ytd - d                 :   ytc voldown
-ytd - right             :   ytc seekfw
-ytd - left              :   ytc seekbk
-
-
-
 # swap mode
 swap - h                :   kwmc window -s west
 swap - j                :   kwmc window -s south
@@ -120,11 +98,15 @@ space - a               :   kwmc space -t bsp
 space - s               :   kwmc space -t monocle
 space - d               :   kwmc space -t float
 
-#space - x               :   kwmc space -g increase horizontal
-#space - y               :   kwmc space -g increase vertical
+space - x               :   kwmc space -g increase horizontal
+space - y               :   kwmc space -g increase vertical
+space - g               :   kwmc space -g increase vertical;\
+							kwmc space -g increase horizontal
 
-#space + shift - x       :   kwmc space -g decrease horizontal
-#space + shift - y       :   kwmc space -g decrease vertical
+space + shift - x       :   kwmc space -g decrease horizontal
+space + shift - y       :   kwmc space -g decrease vertical
+space + shift - g       :   kwmc space -g decrease vertical;\
+						    kwmc space -g decrease horizontal
 
 #space - left            :   kwmc space -p increase left
 #space - right           :   kwmc space -p increase right
