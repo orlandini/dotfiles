@@ -19,7 +19,6 @@ khd mode info on_enter kwmc config border focused color 0xddcd950c
 # toggle between modes
 ctrl - f                :   khd -e "mode activate switcher"
 switcher + ctrl - f     :   khd -e "mode activate default"
-ytd + ctrl - f          :   khd -e "mode activate default"
 swap + ctrl - f         :   khd -e "mode activate default"
 space + ctrl - f        :   khd -e "mode activate default"
 tree + ctrl - f         :   khd -e "mode activate default"
@@ -27,7 +26,6 @@ tree + ctrl - f         :   khd -e "mode activate default"
 switcher - s            :   khd -e "mode activate swap"
 switcher - a            :   khd -e "mode activate space"
 switcher - t            :   khd -e "mode activate tree"
-switcher - i            :   khd -e "mode activate info"
 
 
 
@@ -128,11 +126,13 @@ tree - d                :   kwmc window -z parent
 tree - w                :   kwmc window -t focused
 tree - r                :   kwmc tree rotate 90
 
-tree - s                :   kwmc window -c split - mode toggle;\
-                            khd -e "mode activate default"
+#tree - s                :   kwmc window -c split - mode toggle;\
+#                            khd -e "mode activate default"
+tree - s                :   kwmc window -c split - mode toggle
 
-tree - c                :   kwmc window -c type toggle;\
-                            khd -e "mode activate default"
+#tree - c                :   kwmc window -c type toggle;\
+#                            khd -e "mode activate default"
+tree - c                :   kwmc window -c type toggle
 
 tree - h                :   kwmc window -c expand 0.05 west
 tree - j                :   kwmc window -c expand 0.05 south
