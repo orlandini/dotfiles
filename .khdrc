@@ -38,7 +38,7 @@ tree - escape 		: khd -e "mode activate switcher"
 # switcher mode
 switcher - r            :   khd -e "reload" # reload config
 
-switcher - return       :   open -na /Applications/HyperTerm.app;\
+switcher - return       :   open -na /Applications/Hyper.app;\
                             khd -e "mode activate default"
 
 switcher - h            :   kwmc window -f west
