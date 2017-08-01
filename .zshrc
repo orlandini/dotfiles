@@ -88,6 +88,7 @@ alias kwmkill='launchctl unload /usr/local/opt/kwm/homebrew.mxcl.kwm.plist'
 alias kwmstart='launchctl load /usr/local/opt/kwm/homebrew.mxcl.kwm.plist'
 alias khdkill='launchctl unload /usr/local/opt/khd/homebrew.mxcl.khd.plist'
 alias khdstart='launchctl load /usr/local/opt/khd/homebrew.mxcl.khd.plist'
+alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #load git tab completion
 #autoload -Uz compinit && compinit
