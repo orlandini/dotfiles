@@ -8,7 +8,7 @@ export ZSH=/Users/orlandini/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-œzsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="materialshell"
+#ZSH_THEME="materialshell"
 
 # Uncomment the following line to use case-sensitive completion.
  CASE_SENSITIVE="true"
@@ -84,11 +84,24 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="subl ~/.zshrc"
 alias ohmyzsh="subl ~/.oh-my-zsh"
-alias kwmkill='launchctl unload /usr/local/opt/kwm/homebrew.mxcl.kwm.plist'
-alias kwmstart='launchctl load /usr/local/opt/kwm/homebrew.mxcl.kwm.plist'
-alias khdkill='launchctl unload /usr/local/opt/khd/homebrew.mxcl.khd.plist'
-alias khdstart='launchctl load /usr/local/opt/khd/homebrew.mxcl.khd.plist'
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#load git tab completion
-#autoload -Uz compinit && compinit
+
+export PATH="/usr/local/opt/python@2/bin:$PATH"
+export MKLROOT="/opt/intel/compilers_and_libraries_2018.1.126/mac/mkl"
+export PETSC_DIR="/Users/orlandini/Programming/petsc"
+export SLEPC_DIR="/Users/orlandini/Programming/slepc"
+export PETSC_ARCH_DEB="arch-darwin-c-debug"
+export PETSC_ARCH_REL="arch-darwin-c-opt"
+export PETSC_ARCH="arch-darwin-c-opt"
+# export OPENBLAS_NUM_THREADS=4
+# export OMP_NUM_THREADS=4
+# export MKL_NUM_THREADS=4
+# export MKL_DOMAIN__NUM_THREADS="MKL_BLAS=4"
+# export MKL_THREADING_LAYER=intel
+# export OMP_NESTED=TRUE
+# export MKL_DYNAMIC=FALSE
+# export OMP_DYNAMIC=FALSE
+
+autoload -U promptinit; promptinit
+prompt pure
