@@ -71,4 +71,6 @@ chunkc core::load ffm.so
 
 chunkc tiling::rule --owner Finder --name Copy --state float
 chunkc tiling::rule --owner CLion --name Preferences --state float
-chunkc tiling::rule --owner iTerm2 --state float
+#chunkc tiling::rule --owner iTerm2 --state float
+chunkc tiling::rule --owner iTerm2 --name Hotkey --state float
+chunkc tiling::rule --owner Activity\ Monitor --state float
