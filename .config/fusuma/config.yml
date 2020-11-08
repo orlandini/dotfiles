@@ -10,10 +10,12 @@ swipe:
       command: "xdotool key super" # Activity
   4:
     left:
-      command: "xdotool key ctrl+alt+Down" # Switch to next workspace
+      command:
     right:
-      command: "xdotool key ctrl+alt+Up" # Switch to previous workspace
+      command:
     up:
       command: "xdotool key ctrl+alt+Down" # Switch to next workspace
     down:
       command: "xdotool key ctrl+alt+Up" # Switch to previous workspace
+threshold:
+   swipe: 0.1
