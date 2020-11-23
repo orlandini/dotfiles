@@ -6,7 +6,7 @@ export NETGENDIR="/opt/netgen/bin"
 export NGBASEDIR="/home/orlandini/git/ngsuite"
 export PATH=$NETGENDIR:$PATH
 export VPNUNICAMP=$HOME/Documents/client.ovpn
-export PYTHONPATH=".":$HOME/git/ngsuite:$NETGENDIR/../`python3 -c "from distutils.sysconfig import get_python_lib; print(get_python_lib(1,0,''))"`:$PYTHONPATH
+export PYTHONPATH=".":$NETGENDIR/../`python3 -c "from distutils.sysconfig import get_python_lib; print(get_python_lib(1,0,''))"`:$PYTHONPATH
 
 
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH"
