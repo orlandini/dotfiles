@@ -1,0 +1,3 @@
+[submodule "conky/conky-spotify"]
+	path = conky/conky-spotify
+	url = git@github.com:orlandini/conky-spotify
