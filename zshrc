@@ -95,18 +95,24 @@ DISABLE_AUTO_TITLE="true"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+zstyle :omz:plugins:ssh-agent identities id_github
+zstyle :omz:plugins:ssh-agent lazy yes
+
 if [[ $TERM = dumb ]]; then
+  plugins=(git ssh-agent)
+  source $ZSH/oh-my-zsh.sh
   unset zle_bracketed_paste
+  PS1='> '
+  HUISTFILE=~/.tramp-histfile
 fi
 
 
 
 if [[ $- == *i* ]]; then
-    plugins=(git)
+    plugins=(git zsh-syntax-highlighting ssh-agent)
     ZSH_DISABLE_COMPFIX=true
     source $ZSH/oh-my-zsh.sh
    fpath+=$HOME/.zsh/pure
-   source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
    autoload -U promptinit; promptinit
    prompt pure
 fi
